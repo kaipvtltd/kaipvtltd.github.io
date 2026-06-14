@@ -1,0 +1,45 @@
+Running two 2 TPH lines side by side is a smart strategic move. It allows you to process different feedstocks simultaneously (e.g., one line for woody biomass and one for agricultural residue) while saving on overhead costs.
+
+While you are doubling the output (to **4 TPH**), you do not necessarily need to double the land. A "twin-line" setup typically requires **2.5 to 3.5 acres**, offering a 15–20% space saving compared to two separate plants.
+
+### 1. Shared vs. Independent Infrastructure
+
+To manage different feedstocks effectively, some components must stay separate to avoid contamination or machine damage, while others can be unified.
+
+| Component                   | Shared? | Reason |
+| --- ------------------------| ------- | ------ |
+| **Weighbridge**             | **Yes** | One 50-ton weighbridge can easily handle the traffic for both lines. |
+| *Raw Material Yard*  | *No* | *Strictly separate.* Woody biomass & agro-residue have different fire risks and moisture profiles. Mixing them early makes drying & grinding inconsistent. |
+| **Primary Crusher**         | **No**    | Wood needs a chipper; straw needs a tub grinder or bale breaker. One machine cannot efficiently do both. |
+| **Dryer System**            | **Maybe** | You can share a heat source (one large furnace), but usually need separate drying drums because different materials dry at different rates. |
+| **Pellet/Bio-coal Mills**   | **No**    | Each line needs its own mill. The "die" (the metal mold) for wood is different from the one used for rice husk or straw. |
+| **Bagging & Storage**       | **Yes**   | A shared packing line with two intake hoppers is highly efficient. |
+| **Electrical Panel**        | **Yes**   | A single high-tension (HT) connection and a centralized PLC (control room) for both lines. |
+
+---
+
+### 2. Space Layout Considerations
+
+When running different feedstocks, the "Flow" is the most critical factor for space planning:
+
+* **Zone A: The Split Yard:** Divide your yard with a physical barrier (like a concrete wall). Agro-residues (straw/husk) are extremely dusty and prone to wind-scatter; keeping them away from wood-chipping areas prevents "clogging" of the wood processing equipment.
+* **Zone B: The Unified Shed:** You can house both lines under a single large shed (approx. **40,000–50,000 sq. ft.**).
+* **Line 1 (Woody):** Requires more height for the chipper and large cyclones.
+* **Line 2 (Agro):** Requires more floor space for "de-baling" and initial shredding.
+
+
+* **Zone C: Fire Safety Buffer:** Because you are doubling the biomass volume, fire regulations will likely require a **6-meter wide** clear path around the entire perimeter for fire tenders.
+
+---
+
+### 3. Resource Requirements for a Twin 2 TPH Plant
+
+* **Total Land:** 2.5 – 3.5 acres (depending on the bulkiness of the "agro" feedstock).
+* **Power:** ~650–700 kW (A slight saving over 700+ kW due to shared utilities).
+* **Labor:** 35–45 people (You save on "General Manager" and "Security" roles but still need dedicated operators for each mill).
+
+### 4. The "Blending" Advantage
+
+By having two lines side-by-side, you gain the ability to **blend**. If one feedstock is too high in ash (like rice straw) and the other is high in energy (like sawdust), you can mix the finished powders before they enter the pellet mill to create a "Premium Blend" bio-coal that commands a higher market price.
+
+**Would you like me to create a basic floor plan layout (text-based) showing how these two lines would sit inside the shed?**

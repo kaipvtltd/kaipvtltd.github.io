@@ -1,0 +1,68 @@
+Reducing the scale from **2 TPH (48 Tons Per Day)** to **4 TPD** (Tons Per Day) is a massive shift. You are moving from a large industrial setup to what is essentially a **Micro-Plant** or "Cottage Industry" scale.
+
+At 4 TPD, the machinery is smaller, the power requirements are lower, and the logistics change from heavy trucks to small tractor-trolleys or pickups. You can fit this entire operation into a space roughly the size of a **large residential backyard or a small warehouse (approx. 4,000–6,000 sq. ft.)**.
+
+### 1. The "Micro-Plant" Compact Layout
+
+For 4 TPD, you typically use a **Flat Die Pellet Mill** rather than the large "Ring Die" mills used in TPH plants. These are much more compact.
+
+**Minimum Shed Size:** 40 ft x 30 ft (1,200 sq. ft.)
+**Total Land Needed:** ~5,000 sq. ft. (0.11 Acres)
+
+```text
+ ___________________ [ 40 Feet ] ___________________
+| [RAW STORAGE]      [GRINDER]       [DRYING MATS]  |
+| (Covered Corner)  (Small Hammer)  (Open/Solar)    |
+|        |                |                |        |
+|        |                V                |        |
+|        +----------> [MIXER BIN] <--------+        |
+|                         |                         |
+|                  [FLAT DIE MILL]                  |
+|                   (Pelleting)                     |
+|                         |                         |
+| [PACKING] <------- [COOLING RACK]                 |
+| (Manual Scale)     (Tray Cooling)                 |
+|___________________________________________________|
+ [ 30 Feet ]
+
+```
+
+---
+
+### 2. Space-Saving Strategies for 4 TPD
+
+At this micro-scale, you can replace expensive, bulky machinery with manual or natural processes:
+
+* **Solar Drying:** Instead of a mechanical Flash Dryer (which is huge), you can spread the feedstock on a **cemented floor** or raised mesh trays. This uses 0 energy and saves the space of a furnace and drum.
+* **Vertical "Gravity" Feed:** Place your small hammer mill on a 4-foot platform. The ground powder falls directly into the mixer or pellet mill hopper, eliminating the need for a 15-foot conveyor belt.
+* **Manual Cooling:** Instead of a mechanical counter-flow cooler, spread the hot pellets on a **perforated steel rack**. At 4 TPD (about 500kg per 3-hour run), natural air cooling is sufficient.
+* **Jumbo Bag Storage:** Instead of a dedicated warehouse, use UV-protected jumbo bags. These can be stacked in a corner, requiring very little square footage.
+
+---
+
+### 3. Equipment Dimensions (Micro-Scale)
+
+| Machine                  | Typical Footprint   | Capacity      |
+| ---                      | ---                 | ---           |
+| **Small Hammer Mill**    | 4 ft x 3 ft         | 500 kg/hr     |
+| **Flat Die Pellet Mill** | 5 ft x 3 ft         | 400-600 kg/hr |
+| **Screw Conveyor**       | 8 ft (Length)       | N/A           |
+| **Manual Bagging Scale** | 2 ft x 2 ft         | Up to 1 TPH   |
+
+---
+
+### 4. Resource Requirements
+
+* **Power:** 25–40 HP (approx. 20–30 kW). This can often run on a standard commercial three-phase connection without needing a private transformer.
+* **Labor:** 2–3 persons (one for feeding, one for monitoring, one for bagging).
+* **Water:** Minimal (only for occasional moisture adjustment in the mixer).
+
+### 5. Why the "4 TPD" Model is Popular
+
+This scale is ideal for **decentralized production**. Instead of bringing biomass to a giant plant, you put a 4 TPD plant at the source (e.g., inside a furniture cluster or a large farm).
+
+**The Footprint Advantage:** Since the raw material is used almost immediately, you don't need the massive 10,000 sq. ft. storage yard required for TPH plants. You only need enough space for about **8–10 tons of inventory**.
+
+**Would you like me to find the current market prices for a 500kg/hr Flat Die Pellet Mill kit for this setup?**
+
+
