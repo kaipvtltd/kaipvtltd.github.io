@@ -5,98 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manufacturing Process Flow</title>
     <style>
-        @page {
-            size: A4;
-            margin: 20mm 15mm;
-            background-color: #fafbfc;
-        }
-        
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             color: #2c3e50;
-            background-color: #fafbfc;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             line-height: 1.5;
         }
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 10px;
+            margin: 0;
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 35px;
-            border-bottom: 3px solid #27ae60;
-            padding-bottom: 15px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 10px;
         }
 
         .header h1 {
-            font-size: 24pt;
+            font-size: 20pt;
             color: #1e3d2f;
-            margin: 0 0 8px 0;
+            margin: 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        .header p {
-            font-size: 11pt;
-            color: #7f8c8d;
-            margin: 0;
-            font-style: italic;
-        }
-
         .flow-container {
-            display: table;
-            width: 100%;
-            margin: 0 auto;
+            text-align: left;
         }
 
         .step-wrapper {
-            display: block;
-            text-align: center;
-            position: relative;
-        }
-
-        .step-card {
-            display: inline-block;
-            width: 85%;
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-left: 5px solid #27ae60;
-            border-radius: 6px;
-            padding: 15px 20px;
-            margin: 8px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            margin: 10px 0;
             text-align: left;
-            page-break-inside: avoid;
-        }
-
-        /* Alternating accent colors for distinct process phases */
-        .step-wrapper:nth-child(1) .step-card,
-        .step-wrapper:nth-child(2) .step-card,
-        .step-wrapper:nth-child(3) .step-card {
-            border-left-color: #2980b9; /* Sourcing & Logistics (Blue) */
-        }
-
-        .step-wrapper:nth-child(4) .step-card,
-        .step-wrapper:nth-child(5) .step-card,
-        .step-wrapper:nth-child(6) .step-card,
-        .step-wrapper:nth-child(7) .step-card {
-            border-left-color: #e67e22; /* Processing & Refining (Orange) */
-        }
-
-        .step-wrapper:nth-child(8) .step-card,
-        .step-wrapper:nth-child(9) .step-card,
-        .step-wrapper:nth-child(10) .step-card,
-        .step-wrapper:nth-child(11) .step-card {
-            border-left-color: #27ae60; /* Finishing & Packing (Green) */
         }
 
         .step-number {
@@ -119,56 +61,11 @@
             vertical-align: middle;
         }
 
-        .step-desc {
-            font-size: 9.5pt;
-            color: #555;
-            margin: 6px 0 0 45px;
-        }
-
         .arrow {
             font-size: 16pt;
             color: #bdc3c7;
-            margin: 2px 0;
+            margin: 5px 0 5px 12px;
             line-height: 1;
-        }
-
-        .legend-box {
-            background-color: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            padding: 12px;
-            margin-top: 30px;
-            page-break-inside: avoid;
-        }
-
-        .legend-title {
-            font-size: 10pt;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #7f8c8d;
-            margin-bottom: 8px;
-            text-align: center;
-        }
-
-        .legend-items {
-            display: table;
-            width: 100%;
-            text-align: center;
-        }
-
-        .legend-item {
-            display: inline-block;
-            margin: 0 15px;
-            font-size: 9.5pt;
-        }
-
-        .color-dot {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border-radius: 3px;
-            margin-right: 6px;
-            vertical-align: middle;
         }
     </style>
 </head>
@@ -182,66 +79,65 @@
         <div class="flow-container">
             
             <div class="step-wrapper">
-                    <span class="step-number">01</span>
-                    <span class="step-title">Raw Material Collection</span>
+                <span class="step-number">01</span>
+                <span class="step-title">Raw Material Collection</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">02</span>
-                    <span class="step-title">Baling &amp; Transportation</span>
+                <span class="step-number">02</span>
+                <span class="step-title">Baling &amp; Transportation</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">03</span>
-                    <span class="step-title">Storage Yard</span>
+                <span class="step-number">03</span>
+                <span class="step-title">Storage Yard</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">04</span>
-                    <span class="step-title">Shredding (using Double Shaft Shredder)</span>
+                <span class="step-number">04</span>
+                <span class="step-title">Shredding (using Double Shaft Shredder)</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">05</span>
-                    <span class="step-title">Grinding (using Hammer Mill)</span>
+                <span class="step-number">05</span>
+                <span class="step-title">Grinding (using Hammer Mill)</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">06</span>
-                    <span class="step-title">Pelletizing (using Yulong Pellet Machine)</span>
+                <span class="step-number">06</span>
+                <span class="step-title">Pelletizing (using Yulong Pellet Machine)</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">08</span>
-                    <span class="step-title">Cooling</span>
+                <span class="step-number">08</span>
+                <span class="step-title">Cooling</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">09</span>
-                    <span class="step-title">Screening</span>
+                <span class="step-number">09</span>
+                <span class="step-title">Screening</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">10</span>
-                    <span class="step-title">Bulk Loading (using Loader)</span>
+                <span class="step-number">10</span>
+                <span class="step-title">Bulk Loading (using Loader)</span>
                 <div class="arrow">↓</div>
             </div>
 
             <div class="step-wrapper">
-                    <span class="step-number">11</span>
-                    <span class="step-title">Dispatch (on closed Delivery Trucks)</span>
+                <span class="step-number">11</span>
+                <span class="step-title">Dispatch (on closed Delivery Trucks)</span>
             </div>
 
         </div>
-
     </div>
 
 </body>
