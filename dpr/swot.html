@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT Analysis Matrix</title>
+    <style>
+        :root {
+            --strength-color: #2e7d32;
+            --weakness-color: #c62828;
+            --opportunity-color: #1565c0;
+            --threat-color: #ef6c00;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .swot-container {
+            max-width: 1000px;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .swot-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .swot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .swot-card {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 24px;
+            border-top: 5px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .swot-card.strengths { border-top-color: var(--strength-color); }
+        .swot-card.weaknesses { border-top-color: var(--weakness-color); }
+        .swot-card.opportunities { border-top-color: var(--opportunity-color); }
+        .swot-card.threats { border-top-color: var(--threat-color); }
+
+        .swot-card h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 1.25rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .strengths h2 { color: var(--strength-color); }
+        .weaknesses h2 { color: var(--weakness-color); }
+        .opportunities h2 { color: var(--opportunity-color); }
+        .threats h2 { color: var(--threat-color); }
+
+        .swot-card ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .swot-card li {
+            margin-bottom: 12px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .swot-card li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            .swot-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            .swot-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="swot-container">
+    <h1 class="swot-header">Strategic SWOT Analysis</h1>
+    
+    <div class="swot-grid">
+        <!-- STRENGTHS -->
+        <div class="swot-card strengths">
+            <h2>Strengths</h2>
+            <ul>
+                <li>Abundant, hyper-local feedstock</li>
+                <li>Low raw material procurement costs</li>
+                <li>Strategic location on NH-19 (G.T. Road)</li>
+            </ul>
+        </div>
+
+        <!-- WEAKNESSES -->
+        <div class="swot-card weaknesses">
+            <h2>Weaknesses</h2>
+            <ul>
+                <li>High initial CAPEX for quality machinery</li>
+                <li>Raw material prices spike during monsoon</li>
+                <li>High electrical connected load requirement</li>
+            </ul>
+        </div>
+
+        <!-- OPPORTUNITIES -->
+        <div class="swot-card opportunities">
+            <h2>Opportunities</h2>
+            <ul>
+                <li>Rigid NTPC co-firing mandates</li>
+                <li>Rising prices of imported/fossil coal</li>
+                <li>Favorable state industrial subsidies</li>
+            </ul>
+        </div>
+
+        <!-- THREATS -->
+        <div class="swot-card threats">
+            <h2>Threats</h2>
+            <ul>
+                <li>Unorganized loose husk trading competition</li>
+                <li>Variations in seasonal crop yields</li>
+                <li>Strict ash limits in institutional tenders</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
