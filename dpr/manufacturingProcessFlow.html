@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Process Flow</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            background-color: #fafbfc;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #2c3e50;
+            background-color: #fafbfc;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 24pt;
+            color: #1e3d2f;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 11pt;
+            color: #7f8c8d;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .flow-container {
+            display: table;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .step-wrapper {
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-card {
+            display: inline-block;
+            width: 85%;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #27ae60;
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin: 8px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            text-align: left;
+            page-break-inside: avoid;
+        }
+
+        /* Alternating accent colors for distinct process phases */
+        .step-wrapper:nth-child(1) .step-card,
+        .step-wrapper:nth-child(2) .step-card,
+        .step-wrapper:nth-child(3) .step-card {
+            border-left-color: #2980b9; /* Sourcing & Logistics (Blue) */
+        }
+
+        .step-wrapper:nth-child(4) .step-card,
+        .step-wrapper:nth-child(5) .step-card,
+        .step-wrapper:nth-child(6) .step-card,
+        .step-wrapper:nth-child(7) .step-card {
+            border-left-color: #e67e22; /* Processing & Refining (Orange) */
+        }
+
+        .step-wrapper:nth-child(8) .step-card,
+        .step-wrapper:nth-child(9) .step-card,
+        .step-wrapper:nth-child(10) .step-card,
+        .step-wrapper:nth-child(11) .step-card {
+            border-left-color: #27ae60; /* Finishing & Packing (Green) */
+        }
+
+        .step-number {
+            display: inline-block;
+            font-size: 10pt;
+            font-weight: bold;
+            color: #fff;
+            background-color: #34495e;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+
+        .step-title {
+            font-size: 13pt;
+            font-weight: 600;
+            color: #2c3e50;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .step-desc {
+            font-size: 9.5pt;
+            color: #555;
+            margin: 6px 0 0 45px;
+        }
+
+        .arrow {
+            font-size: 16pt;
+            color: #bdc3c7;
+            margin: 2px 0;
+            line-height: 1;
+        }
+
+        .legend-box {
+            background-color: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 30px;
+            page-break-inside: avoid;
+        }
+
+        .legend-title {
+            font-size: 10pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .legend-items {
+            display: table;
+            width: 100%;
+            text-align: center;
+        }
+
+        .legend-item {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 9.5pt;
+        }
+
+        .color-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Manufacturing Process Flow</h1>
+            <p>Agri-Residue Pellet Production Sequence</p>
+        </div>
+
+        <div class="flow-container">
+            
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">01</span>
+                    <span class="step-title">Raw Material Collection</span>
+                    <div class="step-desc">Gathering paddy straw, wheat straw, rice husk, or mustard stalk directly from fields and local mills during respective harvesting seasons.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">02</span>
+                    <span class="step-title">Baling &amp; Transportation</span>
+                    <div class="step-desc">Compressing loose crop residues into dense, manageable bales using field balers to optimize transit capacity and logistic costs.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">03</span>
+                    <span class="step-title">Storage Yard</span>
+                    <div class="step-desc">Strategic stockpiling of secured raw materials in a designated storage depot to ensure continuous, year-round manufacturing operations.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">04</span>
+                    <span class="step-title">Shredding</span>
+                    <div class="step-desc">Primary mechanical breaking down of large bales and long stalks into coarse, uniform particle lengths.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">05</span>
+                    <span class="step-title">Grinding</span>
+                    <div class="step-desc">Secondary milling to pulverize rough shredded fibers into a fine, consistent powdery mash ideal for extrusion.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">06</span>
+                    <span class="step-title">Drying <span style="font-size: 9pt; color: #e67e22; font-weight: normal;">(If Required)</span></span>
+                    <div class="step-desc">Thermal conditioning using a drum or flash dryer to optimize moisture levels, ensuring optimal cohesion and preventing structural defects.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">07</span>
+                    <span class="step-title">Pelletizing</span>
+                    <div class="step-desc">Extruding the conditioned raw mash through high-pressure pellet dies where friction, heat, and natural binders fuse the material into solid cylindrical pellets.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">08</span>
+                    <span class="step-title">Cooling</span>
+                    <div class="step-desc">Passing newly formed hot pellets through a counter-flow cooler to lower structural temperatures to ambient levels, hardening and stabilizing them.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">09</span>
+                    <span class="step-title">Screening</span>
+                    <div class="step-desc">Sifting the finished product over vibratory meshes to filter out loose fines and broken fragments, routing dust back for re-pelletization.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">10</span>
+                    <span class="step-title">Bagging / Bulk Loading</span>
+                    <div class="step-desc">Packing high-quality pellets into commercial storage bags or directly feeding bulk distribution trucks via overhead hopper chutes.</div>
+                </div>
+                <div class="arrow">↓</div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="step-card">
+                    <span class="step-number">11</span>
+                    <span class="step-title">Dispatch</span>
+                    <div class="step-desc">Logistics coordinating outfeed delivery of prepared pellet batches to consumer markets or regional commercial energy clients.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="legend-box">
+            <div class="legend-title">Process Phase Key</div>
+            <div class="legend-items">
+                <div class="legend-item"><span class="color-dot" style="background-color: #2980b9;"></span>Sourcing &amp; Logistics</div>
+                <div class="legend-item"><span class="color-dot" style="background-color: #e67e22;"></span>Preparation &amp; Extrusion</div>
+                <div class="legend-item"><span class="color-dot" style="background-color: #27ae60;"></span>Finishing &amp; Delivery</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
