@@ -1,1 +1,27 @@
-test
+Please simulate a run of the below explained buiness for below specified number of years and calculate the income statement, balance sheet, cashflow statements, ROI, and ROA on a quarterly basis in a realistic but conservative scenario. Please build a full financial model including EMI schedule, depreciation, DSCR, IRR, payback period, and sensitivity analysis. The business is to establish and operate a biocoal pellet manufacturing plant in Kaimur, Bihar and sell it to power plants like NTPC. Please also suggest what pellet selling price is required to earn a 15–20% return on equity. Please ask for any information needed for this before doing the work. Below is most ofthe informastion to begin with:
+1. Number of years to run simulation for: 2
+2. Busines Startd Date: November 1, 2026.
+3. Name of Business: Kudra Agro
+4. Location: Kaimur, Bihar
+5. Raw Material used: Paddy Straw, Paddy Husk, Wheat Straw, Mustard Stalk used in equal proportions (25% each) year round to make the pellets.
+6. Land : 5.4 Acre
+7. Land annual lease: rupees 3,48,480.00 increasing by 6% each year.
+8. Plant capacity: 2 Tons per Hour. But actual realized capacity will be about 1.5 TPH only
+9. Plant working days per year: 300 days
+10. Plant working hours per day: 16 hours
+11. Plant shift pattern: 2 hifts of 8 hours each
+12. Staff requirement per shift: 11
+13. Plant operating hours per year: 4800 hours
+14. Annual Pellet Production:9,600 metric tons
+15. Moisture level in produced Pellets: 11%
+16. Dust Loss in manufacturing Pellets: 5%
+17. Moisture level in incoming raw material: 18%
+18. Total raw material purchased for the year: 12,000 tons
+18. Half the raw material will be bought in November and other half in May.
+19. Delivered Price of Raw Material is: rupees 3 per kg
+20. 
+
+
+
+
+
