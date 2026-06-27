@@ -1,1 +1,146 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot Presentation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: system-ui, -apple-system, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Presentation Slide Container */
+        .presentation-container {
+            position: relative;
+            width: 90vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Hidden by default, controlled via JS */
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .slide.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        /* Scaling to make screenshots fit beautifully without distortion */
+        .slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 2px solid #333;
+            border-radius: 4px;
+        }
+        /* Navigation Controls */
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 10;
+        }
+        button {
+            background-color: #222;
+            color: white;
+            border: 1px solid #444;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        #slide-counter {
+            font-size: 16px;
+            min-width: 60px;
+            text-align: center;
+            color: #aaa;
+        }
+        /* Simple subtle fade animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container">
+        <!-- STEP 1: Change the src names to match your actual screenshot image files -->
+        <div class="slide active"><img src="screenshot1.png" alt="Slide 1"></div>
+        <div class="slide"><img src="screenshot2.png" alt="Slide 2"></div>
+        <div class="slide"><img src="screenshot3.png" alt="Slide 3"></div>
+        <div class="slide"><img src="screenshot4.png" alt="Slide 4"></div>
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)">✕ Prev</button>
+        <div id="slide-counter">1 / 4</div>
+        <button id="nextBtn" onclick="changeSlide(1)">Next ✕</button>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const counter = document.getElementById('slide-counter');
+
+        function updateSlideVisibility() {
+            // Remove active class from all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            // Add active class to current slide
+            slides[currentSlideIndex].classList.add('active');
+            
+            // Update the 1 / X slide tracker text
+            counter.textContent = `${currentSlideIndex + 1} / ${slides.length}`;
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            
+            // Loop back to start or end if boundaries are hit
+            if (currentSlideIndex >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (currentSlideIndex < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+            
+            updateSlideVisibility();
+        }
+
+        // Add keyboard interaction like real PowerPoint
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight' || event.key === ' ') {
+                changeSlide(1); // Next slide
+            } else if (event.key === 'ArrowLeft') {
+                changeSlide(-1); // Previous slide
+            }
+        });
+
+        // Initialize display counter
+        updateSlideVisibility();
+    </script>
+</body>
+</html>
