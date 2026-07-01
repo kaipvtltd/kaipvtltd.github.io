@@ -324,10 +324,13 @@
   <h4>9. Raw Material Availability</h4>
   <div class="rawmaterial-container">
    <iframe 
+      id="rawmaterialIframe"
       src="rawMaterial.html" 
       width="100%" 
       height="600px" 
-      style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+      style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;"
+      scrolling="no"
+      onload="resizeIframe(this)"
       title="Raw Material Availability">
     </iframe>
   </div>
@@ -337,10 +340,13 @@
   <h4>10. Manufacturing Process Flow</h4>
   <div class="processFlow-container">
    <iframe 
+      id="processFlowIframe"
       src="manufacturingProcessFlow.html" 
       width="100%" 
       height="600px" 
-      style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+      style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;"
+      scrolling="no"
+      onload="resizeIframe(this)"
       title="Manufacturing Process Flow">
     </iframe>
   </div>
