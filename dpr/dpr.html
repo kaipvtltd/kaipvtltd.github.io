@@ -29,6 +29,13 @@
           th {
             background-color: #f2f2f2; /* Gray background for headers */
           }
+        @media print {
+            .page-break {
+                display: block;
+                break-before: always;
+                page-break-before: always;
+            }
+        }
     </style>
     <script>
         function resizeIframe(iframe) {
@@ -217,6 +224,7 @@
   </table>
 </section>    
 
+ <div class="page-break"></div>
  <section class="card">
   <h4>5. Market Analysis & Demand Assessment (Only in a section of the Local Market we will Target)</h4>
   <table>
@@ -288,6 +296,7 @@
     <h4>These are the primary targets, but there are a few more power plants within 220 kilometers.</h4>
 </section>
 
+<div class="page-break"></div>
 <section class="card">
   <h4>7. Strategic SWOT Analysis for Project</h4>
   <div class="swot-container">
@@ -304,6 +313,8 @@
   </div>
 </section>    
 
+     
+<div class="page-break"></div>
 <section class="card">
   <h4>8. Required License & Permit etc</h4>
   <table>
@@ -320,6 +331,7 @@
   </table>
 </section>    
 
+<div class="page-break"></div>
 <section class="card">
   <h4>9. Raw Material Availability</h4>
   <div class="rawmaterial-container">
